@@ -1,0 +1,44 @@
+{
+  "name": "suspense-image",
+  "version": "1.0.0",
+  "description": "Integration of React Suspense with Next.js Image component",
+  "keywords": [
+    "react",
+    "nextjs",
+    "suspense",
+    "image"
+  ],
+  "bugs": {
+    "url": "https://github.com/michaltarasiuk/suspense-image/issues"
+  },
+  "license": "MIT",
+  "author": "Michał Tarasiuk <tarasiuk.michal03@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaltarasiuk/suspense-image.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "packageManager": "npm@11.2.0+sha512.3dc9c50ba813a3d54393155a435fe66404b72685ab0e3008f9ae9ed8d81f6104860f07ed2656dd5748c1322d95f3140fa9b19c59a6bba7750fd12285f81866da",
+  "scripts": {
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test",
+    "build": "tsc",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "test": "vitest run",
+    "dev": "vitest",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.0",
+    "@changesets/cli": "^2.29.3",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  }
+}
