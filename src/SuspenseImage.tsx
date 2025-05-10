@@ -1,5 +1,3 @@
-import 'client-only';
-
 import Image, {getImageProps, type ImageProps} from 'next/image';
 import {use} from 'react';
 

@@ -4,21 +4,17 @@
     "module": "ESNext",
     "lib": ["es2024", "DOM"],
     "jsx": "react-jsx",
-    "outDir": "dist",
-    "rootDir": "src",
+    "moduleResolution": "node",
+    "moduleDetection": "force",
+    "verbatimModuleSyntax": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowJs": true,
     "isolatedModules": true,
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "skipLibCheck": true,
     "strict": true,
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true,
-    "declaration": true,
-    "declarationMap": true
+    "skipLibCheck": true,
+    "noEmit": true
   }
 }
