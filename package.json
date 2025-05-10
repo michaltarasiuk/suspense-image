@@ -1,5 +1,5 @@
 {
-  "name": "suspense-image",
+  "name": "suspense-next-image",
   "version": "1.0.1",
   "description": "Integration of React Suspense with Next.js Image component",
   "keywords": [
