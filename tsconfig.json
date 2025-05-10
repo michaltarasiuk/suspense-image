@@ -1,26 +1,23 @@
 {
   "compilerOptions": {
-    /* Basic Options */
     "target": "es2022",
-    "module": "NodeNext",
-    "lib": ["es2022"],
-    "allowJs": true,
+    "module": "ESNext",
+    "lib": ["es2024", "DOM"],
+    "jsx": "react-jsx",
     "outDir": "dist",
     "rootDir": "src",
     "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowJs": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
     "moduleDetection": "force",
+    "moduleResolution": "node",
     "sourceMap": true,
-
-    /* Strict Type-Checking Options */
+    "skipLibCheck": true,
     "strict": true,
-    "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
-
-    /* Advanced Options */
+    "noUncheckedIndexedAccess": true,
     "declaration": true,
     "declarationMap": true
   }

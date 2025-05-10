@@ -1,1 +1,1 @@
-export {add} from './utils.js';
+export {SuspenseImage} from './SuspenseImage.js';
