@@ -21,7 +21,6 @@
   "main": "dist/index.js",
   "exports": {
     ".": "./dist/index.js",
-    "./react-server": "./dist/error.js",
     "./package.json": "./package.json"
   },
   "files": [
